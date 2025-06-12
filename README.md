@@ -1,5 +1,46 @@
 # CardioSense 
 
+Cardiovascular diseases (CVDs) are the leading cause of death globally, responsible for over 17.9 million deaths each year, accounting for 32% of all global deaths.
+(Source: World Health Organization, 2023)
+
+Early detection is critical, but in many healthcare systems, patient data is underutilized and models lack accuracy due to imbalanced datasets, poor interpretability, and limited clinical integration. Medical professionals and researchers need robust, interpretable, and equitable tools to help identify patients at high risk before symptoms become life-threatening.
+
+Why This Program Matters
+CardioSense bridges the gap between clinical data and predictive healthcare by leveraging machine learning to detect heart disease risk. Unlike black-box models or generic classifiers, CardioSense:
+- Handles real-world imbalanced data.
+- Tunes for accuracy and interpretability.
+- Helps decision-makers compare models transparently.
+- Provides visual insights for clinical understanding.
+
+This makes it ideal for hospitals, healthcare researchers, medical AI teams, and public health analysts seeking to reduce diagnostic errors and improve early detection rates.
+
+# What the Program Does
+- Predict Heart Disease: Trains and compares multiple machine learning models using patient data (e.g., cholesterol levels, blood pressure, chest pain type, etc.)
+- Outputs the likelihood of heart disease for each patient.
+- Handle Imbalanced Data: Uses SMOTE and ADASYN to balance class distribution (e.g., healthy vs. diseased), improving model fairness and real-world usability.
+- Evaluate and Compare Models: Calculates key metrics suc as Accuracy, Precision, Recall, F1 Score, ROC AUC
+- Produces a side-by-side summary table and classification report.
+- Identifies the best-performing model for heart disease prediction using F1 score as the primary metric.
+- Optimize Performance: Implements GridSearchCV for hyperparameter tuning of Random Forest and other models.
+- Generate Interactive Insights: Visualizes feature importance (what variables matter most for prediction).
+- Plots ROC curves to show trade-offs in classification performance.
+
+Notes: 
+- Recall (Sensitivity): Out of all actual patients with heart disease, how many did the model correctly find?
+- F1 Score: How balanced is precision and recall? Useful when the dataset is imbalanced. High F1 = a model that’s both precise and good at finding actual cases.
+- ROC AUC (Receiver Operating Characteristic – Area Under Curve): How well can the model distinguish between patients with and without heart disease?
+- ROC Curve plots how recall and false positive rate trade off at different thresholds.
+- AUC is a score from 0 to 1 — higher = better.
+  
+
+# 👨‍⚕️ Target Audience
+- Healthcare Data Scientists building ML models for diagnostics.
+- Clinical Researchers studying risk factors for heart disease.
+- Hospitals & Clinics integrating predictive tools into electronic health record (EHR) systems.
+- Public Health Agencies prioritizing preventative care strategies.
+- Medical AI Engineers creating interpretable and ethical ML systems for deployment.
+  
+
 # Technical Skills Used
 
 Programming Language: Python
@@ -60,24 +101,3 @@ Visualization:
 Result Summarization:
 - Outputs a DataFrame summarizing performance metrics for all models.
 - Highlights the best-performing model based on the highest F1 score.
-
-# What the Program Can Do
-
-Predict Heart Disease:
-- Trains various machine learning models to predict heart disease outcomes based on patient data.
-
-Handle Imbalanced Data:
-- Ensures balanced training for minority and majority classes using advanced sampling techniques like SMOTE and ADASYN.
-
-Evaluate and Compare Models:
-- Provides detailed metrics for model evaluation and comparison.
-- Highlights the best model for heart disease prediction.
-
-Optimize Performance:
-- Performs hyperparameter tuning for improved accuracy and reliability of predictions.
-
-Interactive Insights:
-- Visualizes key aspects like feature importance and ROC curves for better interpretability.
-
-Support for Decision-Making:
-- Offers actionable insights for selecting the most suitable model for predicting heart disease, ideal for healthcare analysts and researchers.
