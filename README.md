@@ -5,7 +5,8 @@ Cardiovascular diseases (CVDs) are the leading cause of death globally, responsi
 
 Early detection is critical, but in many healthcare systems, patient data is underutilized and models lack accuracy due to imbalanced datasets, poor interpretability, and limited clinical integration. Medical professionals and researchers need robust, interpretable, and equitable tools to help identify patients at high risk before symptoms become life-threatening.
 
-Why This Program Matters
+# Why This Program Matters
+
 CardioSense bridges the gap between clinical data and predictive healthcare by leveraging machine learning to detect heart disease risk. Unlike black-box models or generic classifiers, CardioSense:
 - Handles real-world imbalanced data.
 - Tunes for accuracy and interpretability.
