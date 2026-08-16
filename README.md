@@ -67,4 +67,3 @@ python cardiosense_simple.py           # lightweight version
 ## License
 
 MIT — see [LICENSE](LICENSE). Author: **Azra Bano**.
-
